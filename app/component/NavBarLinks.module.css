@@ -10,7 +10,11 @@
 .container {
     /* border: 1px solid rgb(15, 15, 23); */
     display: flex;
-    width: 100%;
+    width: 17vh;
     justify-content: center;
     margin-top: 0.2rem;
+    background-color: white;
+    border:0.2px solid black;
+    opacity: 0.95;
+    border-radius: 9px;
 }
