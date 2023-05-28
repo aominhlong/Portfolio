@@ -1,3 +1,4 @@
+import Greetings from "./component/Greetings";
 import NavBar from "./component/NavBar";
 import styles from './globals.css'
 
@@ -11,8 +12,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <NavBar></NavBar>
+        <Greetings></Greetings>
         {children}
-        </body>
+      </body>
     </html>
   )
 }
