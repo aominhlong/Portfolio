@@ -9,7 +9,7 @@ function NavBar () {
     let navSections = ['Home', 'About', 'Resume', 'Projects', 'Blog', 'Contact']
     
     const [isOpen, setOpen] = useState(false)
-    const [display, setDisplay] = useState('none')
+    const [opacity, setOpacity] = useState('0')
 
     return (
         <nav>
@@ -25,15 +25,17 @@ function NavBar () {
                 <Hamburger
                     toggled={isOpen} 
                     toggle={() => {
-                        display == 'none' ? setDisplay('flex') : setDisplay('none')
+                        opacity == '1' ? setOpacity('0') : setOpacity('1')
                         setOpen
                     }}
                 ></Hamburger>
             </div>
-            <div className={styles.hamburgerMenu} style={{display: `${display}`}}>
-                { navSections.map(linkTitle => {
-                    return <NavBarLinks name={linkTitle} key={navSections.indexOf(linkTitle)}className={styles.navLinks}></NavBarLinks>
-                })}
+            <div className={styles.hamburgerContainer}>
+                <div className={styles.hamburgerMenu} style={{opacity: `${opacity}`}}>
+                    { navSections.map(linkTitle => {
+                        return <NavBarLinks name={linkTitle} key={navSections.indexOf(linkTitle)}className={styles.navLinks}></NavBarLinks>
+                    })}
+                </div>
             </div>
         </nav>
     )

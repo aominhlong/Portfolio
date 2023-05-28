@@ -3,7 +3,7 @@ import styles from './NavBarLinks.module.css';
 
 function NavBarLinks({ name }) {
     return (
-        <div>
+        <div className={styles.container}>
             <a className={styles['nav-links']} href={ `/${name.toLowerCase()}` }>{ name }</a>
         </div>
     )
