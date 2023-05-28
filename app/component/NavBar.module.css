@@ -1,5 +1,5 @@
 .container {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 12.25rem;
     width: 99.8%;
     display: flex;
@@ -11,7 +11,7 @@
 .container > img {
     height: 10.875rem;
     width: 10.875rem;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 /* Hamburger */
@@ -50,7 +50,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border: 2px solid green;
+        /* border: 2px solid green; */
         height: 5rem;
         width: 100%;
     }
