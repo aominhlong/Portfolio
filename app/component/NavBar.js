@@ -30,13 +30,13 @@ function NavBar () {
                     }}
                 ></Hamburger>
             </div>
-            <div className={styles.hamburgerContainer}>
+            {/* <div className={styles.hamburgerContainer}>
                 <div className={styles.hamburgerMenu} style={{opacity: `${opacity}`}}>
                     { navSections.map(linkTitle => {
                         return <NavBarLinks name={linkTitle} key={navSections.indexOf(linkTitle)}className={styles.navLinks}></NavBarLinks>
                     })}
                 </div>
-            </div>
+            </div> */}
         </nav>
     )
 }
