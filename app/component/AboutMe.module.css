@@ -1,0 +1,15 @@
+.container {
+    width: 100vw;
+}
+
+.container > h1 {
+    color: #0704AC;
+    font-size: 4rem;
+    margin-left: 2rem;
+}
+
+.paragraphContainer {
+    font-size: 2.5rem;
+    margin: 2rem;
+    margin-top: 0rem;
+}
